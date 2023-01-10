@@ -1,1 +1,6 @@
-<p>alumnos works!</p>
+<div *ngIf="route.snapshot.data['nombre']">
+  <h2>
+    {{ route.snapshot.data["nombre"] }}
+  </h2>
+</div>
+<router-outlet></router-outlet>

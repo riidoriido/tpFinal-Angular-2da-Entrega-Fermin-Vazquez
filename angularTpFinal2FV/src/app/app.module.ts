@@ -14,10 +14,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { CursosTableComponent } from './content/3cursos/cursos-table/cursos-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from './layout/layout.module';
+import { NewDialogComponent } from './core/components/new-dialog/new-dialog.component';
+import { EditDialogComponent } from './core/components/edit-dialog/edit-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NewDialogComponent,
+    EditDialogComponent,
     // MainComponent,
     // NotfoundComponent,
     // NavComponent,
