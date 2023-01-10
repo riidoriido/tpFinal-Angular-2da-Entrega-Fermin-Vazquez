@@ -11,10 +11,10 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
-        path: '',
+        path: 'main',
         component: MainComponent,
         data: {
-          name: 'Home',
+          name: 'Pagina Principal',
         },
       },
       {
@@ -42,7 +42,7 @@ const routes: Routes = [
           name: 'Cursos',
         },
       },
-      { path: '', redirectTo: '/app', pathMatch: 'full' },
+      { path: '', redirectTo: 'app/', pathMatch: 'full' },
       { path: '**', component: NotfoundComponent },
     ],
   },
