@@ -18,7 +18,7 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
-
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [],
   imports: [
@@ -41,6 +41,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatProgressBarModule,
     MatExpansionModule,
     MatDividerModule,
+    MatTableModule,
   ],
   exports: [
     CommonModule,
@@ -62,6 +63,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatProgressBarModule,
     MatExpansionModule,
     MatDividerModule,
+    MatTableModule,
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' }],
 })

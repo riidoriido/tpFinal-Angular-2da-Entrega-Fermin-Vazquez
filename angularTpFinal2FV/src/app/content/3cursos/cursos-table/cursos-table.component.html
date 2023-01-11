@@ -1,1 +1,5 @@
-<p>cursos-table works!</p>
+<div class="p-20 d-flex gap-20">
+  <app-curso-card>
+    *ngFor="let curso of (cursos$ |async)" [curso]="curso"
+  </app-curso-card>
+</div>

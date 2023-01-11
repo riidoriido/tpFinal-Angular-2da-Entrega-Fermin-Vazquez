@@ -11,43 +11,38 @@ export class CursosService {
 
   constructor() {
     this.cursos$ = this.cursos.asObservable();
-    this.getCursosFromAPI().subscribe((course) => {
-      this.cursos.next(course);
+    this.getCursosFromAPI().subscribe((curso) => {
+      this.cursos.next(curso);
     });
   }
 
   getCursosFromAPI(): Observable<Curso[]> {
     return of([
       {
-        id: 1,
         titulo: 'Diseño Web',
         duracion: '2 meses',
         nivel: 'inicial',
         tieneFinal: true,
       },
       {
-        id: 2,
         titulo: 'JavaScript',
         duracion: '2 meses',
         nivel: 'inicial',
         tieneFinal: false,
       },
       {
-        id: 3,
         titulo: 'Python',
         duracion: '3 meses',
         nivel: 'avanzado',
         tieneFinal: true,
       },
       {
-        id: 4,
         titulo: 'UX/UI',
         duracion: '3 meses',
         nivel: 'avanzado',
         tieneFinal: false,
       },
       {
-        id: 5,
         titulo: 'SEO',
         duracion: '1 mes',
         nivel: 'extra',

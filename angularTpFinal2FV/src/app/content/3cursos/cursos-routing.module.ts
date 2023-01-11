@@ -2,12 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CursosTableComponent } from './cursos-table/cursos-table.component';
+import { CursosComponent } from './cursos.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: CursosTableComponent,
-    data: { name: 'Información de Cursos' },
+    component: CursosComponent,
+    children: [
+      {
+        path: '',
+        component: CursosTableComponent,
+        data: { name: 'Información de Cursos' },
+      },
+    ],
   },
 ];
 

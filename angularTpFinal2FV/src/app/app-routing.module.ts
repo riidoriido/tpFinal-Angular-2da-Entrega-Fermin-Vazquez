@@ -42,7 +42,7 @@ const routes: Routes = [
           name: 'Cursos',
         },
       },
-      { path: '', redirectTo: 'app/', pathMatch: 'full' },
+      { path: '', redirectTo: 'app/main', pathMatch: 'full' },
       { path: '**', component: NotfoundComponent },
     ],
   },

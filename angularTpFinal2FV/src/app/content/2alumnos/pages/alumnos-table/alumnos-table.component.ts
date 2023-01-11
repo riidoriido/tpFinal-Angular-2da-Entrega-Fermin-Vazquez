@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { Alumno } from 'src/app/core/models/alumno-model';
 import { AlumnosService } from 'src/app/core/services/alumnos.service';
-// import { NewDialogComponent } from 'src/app/core/components/new-dialog/new-dialog.component';
-import { EditDialogComponent } from 'src/app/core/components/edit-dialog/edit-dialog.component';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -23,10 +20,7 @@ export class AlumnosTableComponent implements OnInit {
     'esRegular',
   ];
 
-  constructor(
-    private alumnosService: AlumnosService,
-    private readonly dialogService: MatDialog
-  ) {}
+  constructor(private alumnosService: AlumnosService) {}
 
   ngOnInit(): void {
     this.alumnos$ = this.alumnosService.alumnos$;
