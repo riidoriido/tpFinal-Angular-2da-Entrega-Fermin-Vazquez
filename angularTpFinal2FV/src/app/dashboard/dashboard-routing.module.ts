@@ -15,6 +15,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'usuarios',
+        loadChildren: () =>
+          import('./usuarios/usuarios.module').then(
+            (module) => module.UsuariosModule
+          ),
+      },
+      {
         path: 'products',
         loadChildren: () =>
           import('./prod-mock/prod-mock.module').then(

@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './layout/header/header.component';
+import { UsuariosPageComponent } from './usuarios/pages/usuarios-page/usuarios-page.component';
 
 @NgModule({
   declarations: [
