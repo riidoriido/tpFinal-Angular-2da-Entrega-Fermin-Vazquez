@@ -14,6 +14,13 @@ const routes: Routes = [
             (module) => module.EstudiantesModule
           ),
       },
+      {
+        path: 'products',
+        loadChildren: () =>
+          import('./prod-mock/prod-mock.module').then(
+            (module) => module.ProdMockModule
+          ),
+      },
     ],
   },
 ];
