@@ -12,8 +12,8 @@ import { AuthService } from '../../auth.service';
 export class LoginPageComponent implements OnDestroy {
   public loading = false;
   public form = new FormGroup({
-    email: new FormControl('michael.lawson@reqres.in', [Validators.required]),
-    password: new FormControl('cityslicka', [Validators.required]),
+    email: new FormControl('rachel.howell@reqres.in', [Validators.required]),
+    password: new FormControl('thisCityWillEnd1995_', [Validators.required]),
   });
   private destroyed$ = new Subject();
 

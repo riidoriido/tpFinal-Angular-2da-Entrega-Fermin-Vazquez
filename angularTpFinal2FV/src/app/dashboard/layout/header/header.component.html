@@ -5,19 +5,22 @@
   <button type="button" mat-icon-button (click)="toggleSidebar.emit()">
     <mat-icon>menu</mat-icon>
   </button>
-  <span
-    style="cursor: pointer"
-    *ngIf="user; else templateName"
-    routerLink="my-profile"
-  >
-    Logged as: <b>{{ user.fullName }} </b>
-  </span>
-  <button (click)="authService.logOut()" color="warn" mat-flat-button>
-    Logout
-  </button>
-  <ng-template #templateName>
-    <button routerLink="/auth/login" mat-flat-button color="primary">
-      Login
+  <br /><br />
+  <div>
+    <span
+      style="cursor: pointer"
+      *ngIf="user; else templateName"
+      routerLink="my-profile"
+    >
+      Logged as: {{ user.fullName }}
+    </span>
+    <button (click)="authService.logOut()" color="accent" mat-mini-fab>
+      <mat-icon>logout</mat-icon>
     </button>
-  </ng-template>
+    <ng-template #templateName>
+      <button routerLink="/auth/login" mat-mini-fab color="primary">
+        <mat-icon>login</mat-icon>
+      </button>
+    </ng-template>
+  </div>
 </mat-toolbar>
