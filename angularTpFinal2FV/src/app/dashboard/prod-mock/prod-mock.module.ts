@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { ProdMockRoutingModule } from './prod-mock-routing.module';
 import { ProdMockPageComponent } from './pages/prod-mock-page/prod-mock-page.component';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [
-    ProdMockPageComponent
-  ],
+  declarations: [ProdMockPageComponent],
   imports: [
     CommonModule,
-    ProdMockRoutingModule
-  ]
+    ProdMockRoutingModule,
+    MatButtonModule,
+    MatIconModule,
+  ],
 })
-export class ProdMockModule { }
+export class ProdMockModule {}

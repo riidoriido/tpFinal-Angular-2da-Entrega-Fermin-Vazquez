@@ -1,2 +1,8 @@
-<button (click)="createProduct()">Create Product</button>
-<pre>{{ prodMockService.products$ | async | json }}</pre>
+<div>
+  <pre>{{ prodMockService.products$ | async | json }}</pre>
+</div>
+<div>
+  <button mat-raised-button color="accent" (click)="createProduct()">
+    Create Product <mat-icon>add</mat-icon>
+  </button>
+</div>
